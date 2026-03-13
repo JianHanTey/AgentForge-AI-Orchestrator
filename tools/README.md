@@ -1,6 +1,10 @@
-# Tools Directory
+# Custom AI Tools
+```python
+from langchain.tools import tool
 
-Custom toolsets for agent interaction with external APIs and databases.
-
----
-*Maintained by JianHanTey*
+@tool
+def query_enterprise_db(query: str) -> str:
+    """Search the internal database for specific project metrics."""
+    # Implementation for DB lookup
+    return f"Results for {query}: [Encrypted Data]"
+```
